@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class MyReentrantlock1 {
+public class MyReentrantLock1 {
 
     public static void main(String[] args) {
         final ExecutorService exec = Executors.newFixedThreadPool(4);
