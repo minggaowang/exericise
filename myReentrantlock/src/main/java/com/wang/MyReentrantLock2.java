@@ -38,7 +38,7 @@ public class MyReentrantLock2 {
         }
     }
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         MyReentrantLock2 myReentrantLock2 = new MyReentrantLock2();
         MyReentrantLock2.ThreadA a = myReentrantLock2.new ThreadA();
         a.start();
