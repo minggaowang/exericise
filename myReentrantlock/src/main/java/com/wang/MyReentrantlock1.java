@@ -16,8 +16,8 @@ public class MyReentrantlock1 {
         final Runnable add = new Runnable() {
             @Override
             public void run() {
+                System.out.println("pre " + lock);
                 try {
-                    System.out.println("pre " + lock);
                     lock.lockInterruptibly();
                     con.await(time, TimeUnit.SECONDS);
                 } catch (InterruptedException e) {
