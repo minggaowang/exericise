@@ -26,24 +26,24 @@ public class BookController {
     private BookService bookService;
 
     @RequestMapping(value = "/list", method = RequestMethod.GET)
-    private String list(Model model) {
+    @ResponseBody
+    private List<Book> list(Model model) {
         List<Book> list = bookService.getList();
-        model.addAttribute("list", list);
-        // list.jsp + model = ModelAndView
-        return "list";// WEB-INF/jsp/"list".jsp
+        return list;
     }
 
     @RequestMapping(value = "/{bookId}/detail", method = RequestMethod.GET)
-    private String detail(@PathVariable("bookId") Long bookId, Model model) {
-        if (bookId == null) {
-            return "redirect:/book/list";
-        }
+    @ResponseBody
+    private Book detail(@PathVariable("bookId") Long bookId, Model model) {
+//        if (bookId == null) {
+//            return "redirect:/book/list";
+//        }
         Book book = bookService.getById(bookId);
-        if (book == null) {
-            return "forward:/book/list";
-        }
-        model.addAttribute("book", book);
-        return "detail";
+//        if (book == null) {
+//            return "forward:/book/list";
+//        }
+//        model.addAttribute("book", book);
+        return book;
     }
 
     // ajax json
