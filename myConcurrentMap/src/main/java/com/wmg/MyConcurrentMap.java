@@ -1,10 +1,9 @@
 package com.wmg;
 
-import javax.swing.text.Segment;
 import java.io.Serializable;
 import java.util.concurrent.locks.ReentrantLock;
 
-import static com.sun.xml.internal.fastinfoset.util.ValueArray.MAXIMUM_CAPACITY;
+//import static com.sun.xml.internal.fastinfoset.util.ValueArray.MAXIMUM_CAPACITY;
 
 public class MyConcurrentMap<K, V> {
     // Unsafe mechanics
@@ -143,11 +142,11 @@ public class MyConcurrentMap<K, V> {
                         }
 
                         int c = count + 1;
-                        if (c > threshold && tab.length < MAXIMUM_CAPACITY) {
-//                            rehash(node);
-                        } else {
-                            setEntryAt(tab, index, node);
-                        }
+//                        if (c > threshold && tab.length < MAXIMUM_CAPACITY) {
+////                            rehash(node);
+//                        } else {
+//                            setEntryAt(tab, index, node);
+//                        }
                         ++modCount;
                         count = c;
                         oldValue = null;

@@ -147,7 +147,7 @@ public class MyHashMap<K,V> implements MyMap<K,V> {
     }
 
     public static void main(String[] args) {
-        MyHashMap<String, String> myMap = new MyHashMap<>();
+        MyHashMap<String, String> myMap = new MyHashMap<String, String>();
         for(int i = 0;i<40;i++) {
             myMap.put("key"+i, "value"+i);
         }

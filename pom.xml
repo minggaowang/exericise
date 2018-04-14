@@ -12,6 +12,7 @@
         <module>myReentrantlock</module>
         <module>myMap</module>
         <module>myConcurrentMap</module>
+        <module>mySpringMvc</module>
     </modules>
 
 

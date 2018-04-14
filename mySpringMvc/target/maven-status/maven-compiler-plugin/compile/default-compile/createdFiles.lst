@@ -1,0 +1,13 @@
+com\wmg\service\impl\BookServiceImpl.class
+com\wmg\web\BookController.class
+com\wmg\dto\Result.class
+com\wmg\service\BookService.class
+com\wmg\dao\AppointmentDao.class
+com\wmg\entity\Appointment.class
+com\wmg\exception\RepeatAppointException.class
+com\wmg\exception\NoNumberException.class
+com\wmg\exception\AppointException.class
+com\wmg\entity\Book.class
+com\wmg\dto\AppointExecution.class
+com\wmg\enums\AppointStateEnum.class
+com\wmg\dao\BookDao.class
