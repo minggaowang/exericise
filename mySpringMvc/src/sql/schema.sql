@@ -22,3 +22,11 @@ CREATE TABLE `appointment` (
   PRIMARY KEY (`book_id`, `student_id`),
   INDEX `idx_appoint_time` (`appoint_time`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='预约图书表'
+
+-- 创建水果表
+CREATE TABLE `fruits` (
+  `name` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '水果名',
+  `price` double NOT NULL COMMENT '价格',
+  `producingArea` varchar(11) NOT NULL COMMENT '产地',
+  PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='水果';
